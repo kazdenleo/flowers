@@ -1,0 +1,20 @@
+.main__button {
+    font-family: 'Comfortaa';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.338;
+    margin-top: 42px;
+    padding: 14px 68px 11px;
+    background: #64D370;
+    color: #F5FAFF;
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+    border-radius: 190px;
+    border: 3px solid #64D370;
+    cursor: pointer;
+}
+
+.main__button:hover {
+    background: none;
+    color: #64D370;
+    border-color: #64D370;
+}

@@ -1,0 +1,10 @@
+.form__container {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: calc(630px - 36px * 2);
+    position: absolute;
+    align-items: center;
+}

@@ -1,0 +1,6 @@
+.slider__item {
+    text-align: center;
+    padding: 0 50px;
+    opacity: .3;
+    transition: .3s;
+}

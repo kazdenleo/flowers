@@ -1,0 +1,17 @@
+.order-button {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.188;
+    padding: 8px 20px;
+    border: 1.5px solid #64D370;
+    border-radius: 190px;
+    background: #64D370;
+    cursor: pointer;
+    color: #F5FAFF;
+}
+
+.order-button:hover {
+    color: #64D370;
+    background: none;
+}

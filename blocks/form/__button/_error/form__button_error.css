@@ -1,0 +1,5 @@
+.form__button_error {
+    color:#64D370;
+    background: none;
+    cursor: revert;
+}

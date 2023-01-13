@@ -1,0 +1,10 @@
+.info__text {
+    color: #F5FAFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}

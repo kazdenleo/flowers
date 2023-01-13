@@ -1,0 +1,7 @@
+.work__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    position: relative;
+    flex: 0 4 20%;
+}

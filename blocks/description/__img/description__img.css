@@ -1,0 +1,4 @@
+ .description__img {
+    object-fit: contain;
+    width: 50%;
+ }

@@ -1,0 +1,4 @@
+.benefits__block {
+    display: flex;
+    justify-content: space-around;
+}

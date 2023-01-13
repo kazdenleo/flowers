@@ -1,0 +1,17 @@
+.footer__text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.375;
+    color:#020202;
+	text-decoration: none;
+}
+
+.footer__text:hover {
+    color: #64D370;
+    text-shadow: 0 0 .45px #333, 0 0 .45 #333;
+}
+
+.footer__text:active {
+    color: #3D9646;
+    text-shadow: 0 0 .45px #333, 0 0 .45 #333;
+}

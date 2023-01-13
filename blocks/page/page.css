@@ -1,0 +1,25 @@
+.page {
+	font-family: 'Comfortaa', 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%; 
+	max-width: 1920px;
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+@media screen and (max-width: 940px) {
+	.page {
+
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.page {
+		
+	}
+}

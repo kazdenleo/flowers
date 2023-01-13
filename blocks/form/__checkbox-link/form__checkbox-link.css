@@ -1,0 +1,15 @@
+.form__checkbox-link {
+    font-weight: 700;
+    color: #F5FAFF;
+    text-decoration: underline;
+}
+
+.form__checkbox-link:hover {
+    color: #64D370;
+    text-shadow: 0 0 .45px #333, 0 0 .45 #333;
+}
+
+.form__checkbox-link:active {
+    color: #3D9646;
+    text-shadow: 0 0 .45px #333, 0 0 .45 #333;
+}

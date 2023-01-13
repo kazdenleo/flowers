@@ -1,0 +1,7 @@
+.work__items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 30px 10px;
+}

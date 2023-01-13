@@ -1,0 +1,8 @@
+.form__input-mark {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    top: -5px;
+    left: -2px;
+}

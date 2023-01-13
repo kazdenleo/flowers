@@ -1,0 +1,10 @@
+.main__ellipse {
+    background-color: #64D370;
+    height: 1290px;
+    width: 1290px;
+    position: absolute;
+    right: -600px;
+    top: -300px;
+    z-index: -2;
+    border-radius: 700px;
+}

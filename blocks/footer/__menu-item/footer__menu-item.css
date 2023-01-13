@@ -1,0 +1,7 @@
+.footer__menu-item {
+    padding-bottom: 10px;
+}
+
+.footer__menu-item:last-of-type {
+    padding-bottom: 0;
+}

@@ -1,0 +1,7 @@
+.info {
+    padding: 50px 10px;
+    background: linear-gradient(rgba(42, 116, 50, 0.9), rgba(42, 116, 50, 0.7)), url(/img/wholesale.jpg);
+    background: linear-gradient(rgba(100, 211, 112, 0.9), rgba(100, 211, 112, 0.7)), url(/img/wholesale.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(/img/wholesale.jpg);
+    background-position: center;
+}

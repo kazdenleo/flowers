@@ -1,0 +1,32 @@
+.form__exit {
+    position: absolute;
+    top: -35px;
+    right: -7px;
+    cursor: pointer;
+}
+
+.form__exit:hover:before,
+.form__exit:hover:after {
+    background: #DEE6EE;
+}
+
+.form__exit:before,
+.form__exit:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 5px;
+    background: #64D370;
+}
+
+.form__exit:before {
+    webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form__exit:after {
+    webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}

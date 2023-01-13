@@ -1,0 +1,11 @@
+.header__logo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: #F5FAFF;
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+    border-radius: 180px;
+    top: -47px;
+    left: 60px;
+    z-index: 2;
+}

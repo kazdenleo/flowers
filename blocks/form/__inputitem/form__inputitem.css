@@ -1,0 +1,8 @@
+.form__inputitem {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.form__inputitem:last-of-type {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,4 @@
+.description__img_position_right {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 95%), url(/img/delivery.jpg);
+    background-size: cover;
+}

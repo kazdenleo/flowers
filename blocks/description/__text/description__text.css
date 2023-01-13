@@ -1,0 +1,10 @@
+.description__text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.375;
+    padding-bottom: 20px;
+}
+
+.description__text:last-of-type {
+    padding-bottom: 0;
+}

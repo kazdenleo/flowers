@@ -1,0 +1,10 @@
+.footer__icon {
+    padding-left: 15px;
+    text-decoration: none;
+    color: #020202;
+    font-size: 33px;
+}
+
+.footer__icon:hover {
+    color: #64D370;
+}

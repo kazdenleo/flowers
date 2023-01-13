@@ -1,0 +1,5 @@
+.description__img_position_left {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 95%), url(/img/letter.png);
+    background-size: cover;
+    background-position-x: right;
+}

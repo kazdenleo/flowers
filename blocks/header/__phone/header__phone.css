@@ -1,0 +1,21 @@
+.header__phone {
+    color: #64D370;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    cursor: pointer;
+    padding: 15px 30px 13px;
+    background: #F5FAFF;
+    box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+    border-radius: 190px;
+    border: 3px solid #F5FAFF;
+    z-index: 1;
+}
+
+.header__phone:hover {
+    color: #F5FAFF;
+    border: 3px solid #F5FAFF;
+    filter: drop-shadow(0px 0px 40px rgba(86, 86, 86, 0.3));
+    background: none;
+}

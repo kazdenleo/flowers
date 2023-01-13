@@ -1,0 +1,9 @@
+.work__icon {
+    border: solid 2px rgb(100 211 112 / 75%);
+    border-radius: 50%;
+    padding: 15px;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    overflow: visible;
+}

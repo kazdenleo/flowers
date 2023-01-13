@@ -1,0 +1,12 @@
+.work__item-num {
+    position: absolute;
+    z-index: -1;
+    opacity: .1;
+    color: #64D370;
+    font-size: 200px;
+    font-weight: 100;
+    line-height: 165px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,6 @@
+.description__textblock_position_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
