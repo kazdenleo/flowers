@@ -1,17 +1,17 @@
-.header__menu-item {
+.header__menu-link {
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 400;
     line-height: 25px;
     cursor: pointer;
-    padding-right: 40px;
+    color: #020202;
 }
 
-.header__menu-item:focus {
+.header__menu-link:focus {
     color: #64D370;
     text-shadow: 0 0 .45px #333, 0 0 .45 #333;
 }
 
-.header__menu-item:hover {
+.header__menu-link:hover {
     color: #64D370;
 }

@@ -2,6 +2,6 @@
     display: flex;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 23px 10px 44px;
+    padding: 23px 10px;
     justify-content: space-between;
 }
