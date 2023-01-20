@@ -6,7 +6,6 @@
     border-radius: 0 0 50px 50px;
     z-index: 5;
     transition: all 0.3s ease 0s;
-    display: none;
 }
 
 @media screen and (max-width: 768px) {
