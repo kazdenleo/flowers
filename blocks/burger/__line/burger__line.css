@@ -1,0 +1,9 @@
+.burger__line {
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: rgba(2, 2, 2, 1);
+    right: 20px;
+    top: 30px;
+    border-radius: 2px;
+}

@@ -1,0 +1,37 @@
+.burger {
+    display: none;
+    z-index: 4;
+    box-sizing: content-box;
+    background-color: #F5FAFF;
+    padding: 22px 20px;
+    box-shadow: 0px 0px 40px rgb(86 86 86 / 30%);
+    border-radius: 50%;
+    z-index: 6;
+}
+
+@media screen and (max-width: 768px) {
+	.burger {
+        position: relative;
+        display: inline-flex;
+        width: 24px;
+        height: 20px;
+        transition: all 0.3s ease 0s;
+	}
+    .burger::before,
+    .burger::after {
+        width: 24px;
+        position: absolute;
+        background-color: rgba(2, 2, 2, 1);
+        content: '';
+        height: 4px;
+        right: 20px;
+        border-radius: 2px;
+        transition: all 0.3s ease 0s;
+    }
+    .burger::before {
+        top: 22px;
+    }
+    .burger::after {
+        bottom: 22px;
+    }
+}

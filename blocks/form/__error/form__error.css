@@ -4,4 +4,26 @@
     position: absolute;
     top: calc(100% + 5px);
     left: 20px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .form__error {
+        font-size: 13px;
+        top: calc(100% + 4px);
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form__error {
+        font-size: 11px;
+        top: calc(100% + 3px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form__error {
+        font-size: 9px;
+    }
 }

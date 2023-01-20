@@ -5,3 +5,9 @@
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(/img/wholesale.jpg);
     background-position: center;
 }
+
+@media screen and (max-width: 480px) {
+    .info {
+        padding: 20px 10px;
+    }
+}

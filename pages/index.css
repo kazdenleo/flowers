@@ -3,11 +3,21 @@
 @import url(../blocks/page/page.css);
 
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/_active/header_active.css);
+@import url(../blocks/header/container/header__container.css);
+@import url(../blocks/header/container/_active/header__container_active.css);
 @import url(../blocks/header/__logo/header__logo.css);
-@import url(../blocks/header/__logo-img/header__logo-img.css);
+@import url(../blocks/header/__logo/_active/header__logo_active.css);
 @import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__menu/_active/header__menu_active.css);
 @import url(../blocks/header/__menu-link/header__menu-link.css);
 @import url(../blocks/header/__phone/header__phone.css);
+@import url(../blocks/header/__phone/_active/header__phone_active.css);
+
+@import url(../blocks/burger/burger.css);
+@import url(../blocks/burger/_active/burger_active.css);
+@import url(../blocks/burger/__line/burger__line.css);
+@import url(../blocks/burger/__line/_active/burger__line_active.css);
 
 @import url(../blocks/main/main.css);
 @import url(../blocks/main/__offer/main__offer.css);
@@ -25,6 +35,7 @@
 @import url(../blocks/order-button/order-button.css);
 @import url(../blocks/order-button/_place/_main/order-button_place_main.css);
 @import url(../blocks/order-button/_place/_description/order-button_place_description.css);
+@import url(../blocks/order-button/_place/_product/order-button_place_product.css);
 
 @import url(../blocks/description/description.css);
 @import url(../blocks/description/_position/_right/description_position_right.css);
@@ -48,11 +59,6 @@
 
 @import url(../blocks/feedback/feedback.css);
 
-@import url(../blocks/block-title/block-title.css);
-@import url(../blocks/block-title/_color/_white/block-title_color_white.css);
-@import url(../blocks/block-title/_position/_left/block-title_position_left.css);
-@import url(../blocks/block-title/_position/_right/block-title_position_right.css);
-
 @import url(../blocks/slider/slider.css);
 @import url(../blocks/slider/__item/slider__item.css);
 @import url(../blocks/slider/__text/slider__text.css);
@@ -61,6 +67,7 @@
 @import url(../blocks/work/__items/work__items.css);
 @import url(../blocks/work/__item/work__item.css);
 @import url(../blocks/work/__item-title/work__item-title.css);
+@import url(../blocks/work/__item-text/work__item-text.css);
 
 @import url(../blocks/arrow/arrow.css);
 @import url(../blocks/arrow/__item/arrow__item.css);
@@ -69,6 +76,7 @@
 @import url(../blocks/work/__item-num/work__item-num.css);
 
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__logo/footer__logo.css);
 @import url(../blocks/footer/__content/footer__content.css);
 @import url(../blocks/footer/__menu/footer__menu.css);
 @import url(../blocks/footer/__menu/_align_left/footer__menu_align_left.css);
@@ -99,3 +107,12 @@
 @import url(../blocks/form/__checkbox-link/form__checkbox-link.css);
 @import url(../blocks/form/__button/form__button.css);
 @import url(../blocks/form/__button/_error/form__button_error.css);
+
+@import url(../blocks/block-title/block-title.css);
+@import url(../blocks/block-title/_color/_white/block-title_color_white.css);
+@import url(../blocks/block-title/_position/_center/block-title_position_center.css);
+
+@import url(../blocks/ellipse/ellipse.css);
+@import url(../blocks/ellipse/_position/_main/ellipse_position_main.css);
+@import url(../blocks/ellipse/_position/description_position_right/ellipse_position_description_position_right.css);
+@import url(../blocks/ellipse/_position/description_position_left/ellipse_position_description_position_left.css);

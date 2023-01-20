@@ -1,6 +1,6 @@
 .form__exit {
     position: absolute;
-    top: -35px;
+    top: 15px;
     right: -7px;
     cursor: pointer;
 }
@@ -29,4 +29,34 @@
 .form__exit:after {
     webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+	.form__exit {
+        top: -25px;
+        right: 0px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.form__exit {
+        top: -30px;
+        right: 40px;
+	}
+    .form__exit:before,
+    .form__exit:after {
+        width: 30px;
+        height: 3px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+	.form__exit {
+        top: -30px;
+        right: 40px;
+	}
+    .form__exit:before,
+    .form__exit:after {
+        width: 25px;
+    }
 }

@@ -19,7 +19,6 @@
     font-size: 0;
     width: 30px;
     height: 52px;
-    background-color:aquamarine;
 }
 
 .slider .slick-arrow:hover {
@@ -64,4 +63,19 @@
 
 .slider .slick-center {
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .slider .slick-arrow.slick-prev {
+        left: 15px;
+    }
+    .slider .slick-arrow.slick-next {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        padding: 0;
+    }
 }

@@ -1,9 +1,36 @@
 .product {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1280px;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
     gap: 60px 25px;
     padding: 60px 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .product {
+        gap: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 30px 15px;
+        padding: 40px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product {
+        gap: 25px 10px;
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .product {
+        padding: 10px;
+    }
 }

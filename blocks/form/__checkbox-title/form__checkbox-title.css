@@ -5,3 +5,10 @@
     line-height: 1.338;
     padding-bottom: 20px;
 }
+
+@media screen and (max-width: 320px) {
+	.form__checkbox-title {
+        font-size: 11px;
+        padding-bottom: 10px;
+	}
+}

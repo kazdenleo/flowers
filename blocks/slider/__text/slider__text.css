@@ -1,6 +1,26 @@
 .slider__text {
-    padding-top: 20px;
     font-weight: 700;
     line-height: 1.375;
-    font-size: 18px;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .slider__text {
+        font-size: 14px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider__text {
+        font-size: 13px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .slider__text {
+        font-size: 12px;
+    }
 }

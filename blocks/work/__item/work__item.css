@@ -4,4 +4,5 @@
     max-width: 250px;
     position: relative;
     flex: 0 4 20%;
+    padding: 0 10px;
 }

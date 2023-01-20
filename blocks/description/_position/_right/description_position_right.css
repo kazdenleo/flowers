@@ -1,3 +1,4 @@
 .description_position_right {
     justify-content: flex-end;
+    text-align: right;
 }

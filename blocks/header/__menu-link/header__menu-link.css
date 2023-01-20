@@ -15,3 +15,12 @@
 .header__menu-link:hover {
     color: #64D370;
 }
+
+@media screen and (max-width: 768px) {
+	.header__menu-link {
+        font-family: 'Comfortaa';
+        font-weight: 700;
+        font-style: 16px;
+        line-height: 1.338;
+	}
+}

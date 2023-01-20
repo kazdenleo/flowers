@@ -8,3 +8,25 @@
 .footer__icon:hover {
     color: #64D370;
 }
+
+
+@media screen and (max-width: 768px) {
+    .footer__icon {
+    padding-left: 10px;
+    font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__icon {
+    padding-left: 8px;
+    font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__icon {
+    padding-left: 5px;
+    font-size: 22px;
+    }
+}

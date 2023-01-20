@@ -1,3 +1,21 @@
 .footer__icons {
     padding: 15px 0;
 }
+
+@media screen and (max-width: 768px) {
+    .footer__icons {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__icons {
+        padding: 8px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__icons {
+        padding: 5px 0;
+    }
+}

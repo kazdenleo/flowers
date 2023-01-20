@@ -1,0 +1,11 @@
+.ellipse {
+    border: 8px solid rgba(38, 240, 58, 0.1);
+    position: absolute;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .ellipse {
+        display: none;
+    }
+}

@@ -10,3 +10,15 @@
 .footer__phone:hover {
     text-shadow: 0 0 .45px #333, 0 0 .45 #333;
 }
+
+@media screen and (max-width: 480px) {
+    .footer__phone {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__phone {
+        font-size: 13px;
+    }
+}

@@ -5,3 +5,17 @@
     width: 100%;
     object-fit: cover;
 }
+
+@media screen and (max-width: 480px) {
+    .product__img {
+        height: 200px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .product__img {
+        height: 130px;
+        border-radius: 15px;
+    }
+}

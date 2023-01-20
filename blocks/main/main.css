@@ -3,4 +3,23 @@
     max-width: 1280px;
     margin: 0 auto;
     position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 160px 0 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 140px 0 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main {
+        padding: 270px 0 50px;
+    }
 }

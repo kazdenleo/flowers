@@ -5,3 +5,21 @@
 .footer__menu-item:last-of-type {
     padding-bottom: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .footer__menu-item {
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__menu-item {
+        padding-bottom: 3px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__menu-item {
+        padding-bottom: 0;
+    }
+}

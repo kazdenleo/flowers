@@ -1,3 +1,19 @@
 .form__inputitems {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 15px;
+    gap: 45px;
+}
+
+@media screen and (max-width: 480px) {
+    .form__inputitems {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form__inputitems {
+        gap: 35px;
+    }
 }

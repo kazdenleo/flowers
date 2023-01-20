@@ -2,4 +2,18 @@
     max-width: 1280px;
     margin: 0 auto;
     padding-bottom: 90px;
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .work {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .work {
+        display: none;
+    }
 }

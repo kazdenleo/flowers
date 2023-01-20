@@ -1,0 +1,18 @@
+.burger_active {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: end;
+}
+
+.burger_active::before {
+    transform: rotate(45deg);
+    top: 30px;
+}
+
+.burger_active::after {
+    transform: rotate(-45deg);
+    top: 30px;
+}
+

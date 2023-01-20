@@ -1,4 +1,25 @@
 .description_position_left {
-    padding: 100px 0 0;
+    padding: 60px 0 0;
     min-height: 800px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+    .description_position_left {
+        min-height: 100%;
+        padding: 50px 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description_position_left {
+        min-height: 100%;
+        padding: 50px 0 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .description_position_left {
+        padding: 30px 0 0;
+    }
 }

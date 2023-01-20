@@ -6,7 +6,6 @@
     font-weight: 700;
     line-height: 1.338;
     padding: 10px 0 9px 20px;
-    min-width: 300px;
     width: 100%;
     color: #64D370;
 }
@@ -17,4 +16,16 @@
 
 .form__input:focus {
     box-shadow: 0px 0px 20px #F5FAFF;
+}
+
+@media screen and (max-width: 480px) {
+    .form__input {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form__input {
+        font-size: 13px;
+    }
 }

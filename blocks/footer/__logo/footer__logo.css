@@ -1,0 +1,27 @@
+.footer__logo {
+    background: no-repeat center url(/img/footer-logo.png);
+    height: 100%;
+    display: block;
+    background-size: contain;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__logo {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__logo {
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__logo {
+        max-width: 40px;
+    }
+}

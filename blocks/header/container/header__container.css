@@ -1,0 +1,12 @@
+.header__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+}
+
+@media screen and (max-width: 768px) {
+    .header__container {
+        justify-content: space-between;
+    }
+}

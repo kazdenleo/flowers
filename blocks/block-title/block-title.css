@@ -3,6 +3,17 @@
     font-weight: 700;
     line-height: 1.2;
     color:#020202;
-    text-align: center;
     padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .block-title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .block-title {
+        font-size: 20px;
+    }
 }

@@ -1,10 +1,16 @@
 .header {
-    display: flex;
     width: 100%;
     position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 3;
-    padding: 0 100px;
-    justify-content: center;
+    z-index: 5;
+    padding: 20px 0 0 33px;
+    border-radius: 0 0 50px 50px;
+    z-index: 5;
+    transition: all 0.3s ease 0s;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+        padding: 20px 20px;
+	}
 }

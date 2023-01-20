@@ -18,3 +18,10 @@
     color: #64D370;
     border-color: #64D370;
 }
+
+@media screen and (max-width: 320px) {
+    .main__button {
+        padding: 7px 30px;
+        font-size: 14px;
+    }
+}

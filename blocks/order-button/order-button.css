@@ -15,3 +15,10 @@
     color: #64D370;
     background: none;
 }
+
+@media screen and (max-width: 768px) {
+    .order-button {
+        font-size: 13px;
+        padding: 7px 15px;
+    }
+}

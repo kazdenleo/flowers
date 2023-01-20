@@ -2,4 +2,24 @@
     margin: 0 auto;
     text-align: center;
     padding: 70px 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .feedback {
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feedback {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .feedback {
+        padding: 10px 0;
+    }
 }

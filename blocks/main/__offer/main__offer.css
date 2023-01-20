@@ -1,4 +1,24 @@
 .main__offer {
-    padding-left: 50px;
-    max-width: 570px;
+    padding: 0 50px;
+    max-width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .main__offer {
+        max-width: 50%;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__offer {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main__offer {
+        max-width: 100%;
+        padding: 0 50px;
+    }
 }

@@ -10,6 +10,8 @@
 	width: 100%;
 	box-sizing: border-box;
 	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
 @media screen and (max-width: 940px) {

@@ -10,28 +10,44 @@
     <body>
         <div class="page">
             <header class="header">
-                <ul class="header__menu">
-                    <li class="header__logo"><a class="header__logo-link" href="#"><img class="header__logo-img" alt="Логотип компании «Цветы Оптом»" src="./img/logo2.png"></a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#plus">Преимущества</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#product">Ассортимент</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#work">Условия работы</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#feedback">Отзывы</a></li>
-                    <!--<li class="header__menu-item"><a class="header__menu-link" href="#contact">Контакты</a></li>-->
-                </ul>
-                <a href="https://wa.me/79690350353?text=Здравствуйте.%20Меня%20интересует%20прайс-лист%20на%20свежесрезанные%20цветы,%20сухоцветы%20и%20декор." class="header__phone">+7(969)035-03-53</a>
+                <div class="header__container">
+                    <a class="header__logo" href="#">
+                        <img class="header__logo-img" alt="Логотип компании «Цветы Оптом»" src="./img/logo.png">
+                    </a>
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#plus">Преимущества</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#product">Ассортимент</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#work">Условия работы</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#feedback">Отзывы</a>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/79690350353?text=Здравствуйте.%20Меня%20интересует%20прайс-лист%20на%20свежесрезанные%20цветы,%20сухоцветы%20и%20декор." class="header__phone">+7(969)035-03-53</a>
+                    <div class="burger">
+                        <span class="burger__line"></span>
+                    </div>
+                </div>
             </header>
             <section class="main">
                 <ul class="main__offer">
                     <li class="main__item"><h1 class="main__title">Оптовые поставки цветов с доставкой по всей России</h1></li>
                     <li class="main__item"><p class="main__text">Получите оптовый прайс-лист на свежесрезанные цветы, сухоцветы и флористический материал c возможность наценивать <span class="main__text_color_green">до 200%</span>,
                         в течении <span class="main__text_color_green">15 минут</span>.</p></li>
-                    <li class="main__item"><button class="order-button order-button_place_main">Получить прайс-лист <i class="fa fa-thin fa-download"></i></button></li>
+                    <li class="main__item"><button class="order-button order-button_place_main">Скачать прайс-лист <i class="fa fa-thin fa-download"></i></button></li>
                 </ul>
-                <div class="main__ellipse"></div>
-                <img class="main__img" src="./img/main__img1.jpeg" alt="">
+                <div class="main__ellipse">
+                    <img class="main__img" src="./img/main__img1.jpeg" alt="">
+                    <span class="ellipse ellipse_position_main"></span>
+                </div>
             </section>
             <section id="plus" class="benefits">
-                <h3 class="block-title">7 причин работать с нами</h3>
+                <h3 class="block-title block-title_position_center">6 причин работать с нами</h3>
                 <ul class="benefits__block">
                     <li class="benefits__item">
                         <img class="benefits__img" src="./img/Calendar-1.svg" alt="">
@@ -64,12 +80,12 @@
                     <li class="product__card">
                         <img class="product__img" alt="Розы" src="./img/rosa.png">
                         <p class="product__name">Роза</p>
-                        <button class="order-button">Получить прайс-лист <i class="fa fa-thin fa-download"></i></button>
+                        <button class="order-button order-button_place_product">Скачать прайс-лист <i class="fa fa-thin fa-download"></i></button>
                     </li>
                 </template>
             </ul>
-            <section class="work">
-                <h3 class="block-title">Схема работы</h3>
+            <section id="work" class="work">
+                <h3 class="block-title block-title_position_center">Схема работы</h3>
                 <ul class="work__items">
                     <li class="work__item">
                         <span class="work__item-num">1</span>
@@ -120,9 +136,10 @@
                     </li>
                 </ul>
             </section>
-            <section id="work" class="description description_position_right">
-                <ul class="description__textblock description__textblock_position_left">
-                    <li class="block-title block-title_position_right">Доставка по всей России</li>
+            <section class="description description_position_right">
+                <span class="ellipse ellipse_position_description_position_right"></span>
+                <ul class="description__textblock">
+                    <li class="block-title">Доставка по всей России</li>
                     <li class="description__text">Доставим ваш заказ в удобное для вас место по всей России.</li>
                     <li class="description__text">Все перевозки цветов мы осуществляем в автомобилях с температурным режимом +4℃, чтобы доставка никак не сказалась на качестве цветов.</li>
                     <li class="description__text">Так же имеется возможность забрать ваш заказ самостоятельно с нашего склада.</li>
@@ -130,20 +147,21 @@
                 <div class="description__img description__img_position_right"></div>
             </section>
             <ul class="info">
-                <li class="block-title block-title_color_white">СПИШЕМ ВЕСЬ ЦВЕТОК<br>в случае если он оказался ненадлежащего качества</li>
+                <li class="block-title block-title_position_center block-title_color_white">СПИШЕМ ВЕСЬ ЦВЕТОК<br>в случае если он оказался ненадлежащего качества</li>
                 <li class="info__text">Мы все работаем с цветами, которые по-разному переносят перелёт, доставку и грузчиков авиакомпаний.</li>
                 <li class="info__text">В случае, если к Вам пришел испорченный цветок, все риски мы возьмем на себя и компенсируем Ваши затраты.</li>
             </ul>
             <section class="description description_position_left">
                 <div class="description__img description__img_position_left"></div>
                 <ul class="description__textblock">
-                    <li class="block-title block-title_position_left">Получайте наши прайс-листы еженедельно:</li>
+                    <li class="block-title">Получайте наши прайс-листы еженедельно:</li>
                     <li class="description__text">Введите свой номер телефона с WhatsApp для подписки на еженедельную рассылку прайс-листов на эквадорскую розу.</li>
                     <button class="order-button order-button_place_description">Получать прайс-лист еженедельно</button>
                 </ul>
+                <span class="ellipse ellipse_position_description_position_left"></span>
             </section>
             <section id="feedback" class="feedback">
-                <h3 class="block-title">Отзывы наших клиентов</h3>
+                <h3 class="block-title block-title_position_center">Отзывы наших клиентов</h3>
                 <div class="slider">
                     <div class="slider__item">
                         <p class="slider__text">Роза</p>
@@ -207,10 +225,10 @@
                         <li class="footer__menu-item"><a class="footer__text" href="#">Контакты</a></li>
                     </ul>
                     <div class="footer__logo">
-                        <a class="footer__logo-link" href="#"><img class="footer__logo-img" alt="Логотип компании «Цветы Оптом»" src="./img/logo2.png"></a>
+                       
                     </div>
                     <ul class="footer__menu footer__menu_align_left">
-                        <li class="footer__menu-item"><a class="footer__text" href="#">Условия сотрудничества</a></li>
+                        <li class="footer__menu-item"><a class="footer__text" href="#">Условия</a></li>
                         <li class="footer__menu-item"><a class="footer__text" href="#">FAQ</a></li>
                         <li class="footer__icons">
                             <a class="footer__icon fa-brands fa-telegram" href="https://t.me/+79690350353?text=Здравствуйте.%20Меня%20интересует%20прайс-лист%20на%20свежесрезанные%20цветы,%20сухоцветы%20и%20декор."></a>
@@ -262,6 +280,7 @@
         <script src="js/slick.min.js"></script>
         <script src="/js/mask.js"></script>
         <script src="/js/scroll.js"></script>
+        <script src="/js/menu.js"></script>
         <script type="module" src="js/script.js"></script>
     </body>  
 </html>

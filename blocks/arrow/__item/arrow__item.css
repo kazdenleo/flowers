@@ -33,3 +33,9 @@
 	top: -6px;
 	right: -12px;
 }
+
+@media screen and (max-width: 768px) {
+    .arrow__item:first-of-type {
+        display: none;
+    }
+}
