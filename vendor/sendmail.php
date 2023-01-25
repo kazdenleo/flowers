@@ -9,7 +9,7 @@ $file = $_FILES['file'];
 
 $c = true;
 // Формирование самого письма
-$title = "Заголовок письма";
+$title = "Заявка с сайта";
 if(trim(!empty($_POST['name']))){
 	$body .= "    " . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
       <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>Имя:</b></td>
@@ -63,7 +63,8 @@ try {
   $mail->setFrom('kazakov-denis@list.ru', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('kazakov-denis@list.ru');
+  $mail->addAddress('kazakov-denis@list.ru'); 
+  $mail->addAddress('a.sanovich@mail.ru');
 
   // Отправка сообщения
   $mail->isHTML(true);
