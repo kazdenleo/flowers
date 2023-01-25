@@ -107,6 +107,11 @@
 @import url(../blocks/form/__checkbox-link/form__checkbox-link.css);
 @import url(../blocks/form/__button/form__button.css);
 @import url(../blocks/form/__button/_error/form__button_error.css);
+@import url(../blocks/form/__container/_sending/form__container_sending.css);
+@import url(../blocks/form/_sending/form_sending.css);
+@import url(../blocks/form/__thanks/form__thanks.css);
+@import url(../blocks/form/__thanks/_active/form__thanks_active.css);
+@import url(../blocks/form/__thanks-text/form__thanks-text.css);
 
 @import url(../blocks/block-title/block-title.css);
 @import url(../blocks/block-title/_color/_white/block-title_color_white.css);

@@ -16,6 +16,12 @@
     background: none;
 }
 
+.order-button:active {
+    background: rgb(86 173 95);
+    border: 1.5px solid rgb(86 173 95);
+    color: #F5FAFF;
+}
+
 @media screen and (max-width: 768px) {
     .order-button {
         font-size: 13px;

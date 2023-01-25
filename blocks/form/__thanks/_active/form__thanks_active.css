@@ -1,0 +1,5 @@
+.form__thanks_active {
+    opacity: 1;
+    visibility: inherit;
+    transition: all 0.3s ease 0s;
+}

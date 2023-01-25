@@ -18,7 +18,18 @@
     color: #F5FAFF;
     border: 3px solid #F5FAFF;
     filter: drop-shadow(0px 0px 40px rgba(86, 86, 86, 0.3));
-    background: none;
+    background: rgb(245 250 255 / 0);
+}
+
+.header__phone:active {
+    color: #64D370;
+    border: 3px solid #64D370;
+    background: rgb(245 250 255 / 1);
+}
+
+.header__phone:visited {
+    color: #64D370;
+    background: rgb(245 250 255 / 1);
 }
 
 @media screen and (max-width: 768px) {
@@ -28,5 +39,8 @@
         border: none;
         height: 64px;
         width: 64px;
+    }
+    .header__phone:hover {
+        background: no-repeat #F5FAFF center url(/img/phone.svg);
     }
 }

@@ -1,0 +1,15 @@
+.form__thanks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(51 51 51 / 90%);
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}

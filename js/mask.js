@@ -8,13 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         i = 0,
         def = matrix.replace(/\D/g, ""),
         val = e.target.value.replace(/\D/g, "");
-        /*if (clearVal !== 'false' && e.type === 'blur') {
-            if (val.length < matrix.match(/([\_\d])/g).length) {
-                e.target.value = '';
-                return;
-            }
-        }*/
-
+        
         if (def.length >= val.length) val = def;
         e.target.value = matrix.replace(/./g, function (a) {
             return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a

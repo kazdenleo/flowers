@@ -48,10 +48,12 @@ export class FormValidator {
     }
 
     _hideInputError(inputElement, errorMark, errorInput) {
-        errorInput.classList.remove(this._validateOptions.errorClass);
-        errorMark.classList.remove(this._validateOptions.inputMarkError);
-        errorMark.classList.add(this._validateOptions.inputMarkFine);
-        inputElement.classList.remove(this._validateOptions.inputErrorClass);
+        if (inputElement.getAttribute('name') !== 'text') {
+            errorInput.classList.remove(this._validateOptions.errorClass);
+            errorMark.classList.remove(this._validateOptions.inputMarkError);
+            errorMark.classList.add(this._validateOptions.inputMarkFine);
+            inputElement.classList.remove(this._validateOptions.inputErrorClass);
+        }
     }
 
     _handleFormInput(profileForm, validateOptions) {

@@ -1,0 +1,9 @@
+.form_sending::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(51 51 51 / 90%) url(/img/Loading_icon.gif) center / 50px no-repeat;
+}

@@ -10,3 +10,15 @@
     width: 100%;
     padding: 0 10px;
 }
+
+.form__container::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: 0;
+    visibility: hidden;
+}
