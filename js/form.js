@@ -9,7 +9,6 @@ form.querySelector('.form__exit').addEventListener('click', event => {
 
 // Присвоение слушателей всем кнопкам вызова формы и окрытие формы по нажанию на кнопку
 const arrbut = document.querySelectorAll('.order-button');
-console.log(arrbut);
 arrbut.forEach(function(item, arrbut) {
 	item.addEventListener('click', event => {
 		form.classList.add('form_active');

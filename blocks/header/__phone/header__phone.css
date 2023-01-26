@@ -27,11 +27,6 @@
     background: rgb(245 250 255 / 1);
 }
 
-.header__phone:visited {
-    color: #64D370;
-    background: rgb(245 250 255 / 1);
-}
-
 @media screen and (max-width: 768px) {
     .header__phone {
         font-size: 0;

@@ -1,0 +1,21 @@
+.footer__text_size_small {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__text_size_small {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__text_size_small {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__text_size_small {
+        font-size: 8px;
+    }
+}

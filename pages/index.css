@@ -85,6 +85,7 @@
 @import url(../blocks/footer/__icons/footer__icons.css);
 @import url(../blocks/footer/__icon/footer__icon.css);
 @import url(../blocks/footer/__phone/footer__phone.css);
+@import url(../blocks/footer/__text/_size/_small/footer__text_size_small.css);
 
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/_active/form_active.css);
