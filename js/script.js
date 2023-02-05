@@ -1,6 +1,6 @@
-import { productList } from "/js/components.js";
-import { Card } from "../js/сard.js";
-import { enableValidation, FormValidator } from "../js/validation.js";
+import { productList } from "./components.js";
+import { Card } from "./сard.js";
+import { enableValidation, FormValidator } from "./validation.js";
 
 productList.forEach((item) => {
 	const newCard = new Card(item)

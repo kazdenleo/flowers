@@ -5,10 +5,11 @@
     line-height: 1.5;
     color: #64D370;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .footer__phone:hover {
-    text-shadow: 0 0 .45px #333, 0 0 .45 #333;
+    text-shadow: 0 0 .45px #333;
 }
 
 @media screen and (max-width: 480px) {
