@@ -1,6 +1,149 @@
-import { productList } from "./components.js";
-import { Card } from "./сard.js";
-import { enableValidation, FormValidator } from "./validation.js";
+const productList = [
+    {
+        nameProduct: 'Роза Эквадор и Колумбия',
+        imgProduct: './img/roses-ecuador.jpg'
+    },
+    {
+        nameProduct: 'Роза Кения',
+        imgProduct: './img/roses-kenia.jpg'
+    },
+    {
+        nameProduct: 'Хризантема Голландия',
+        imgProduct: './img/chris.jpg'
+    },
+    {
+        nameProduct: 'Хризантема Импорт (Колумбия, Эквадор, Кения, Италия)',
+        imgProduct: './img/chris-columbia.jpg'
+    },
+    {
+        nameProduct: 'Гвоздика',
+        imgProduct: './img/carnation.jpg'
+    },
+    {
+        nameProduct: 'Альстромерия',
+        imgProduct: './img/alstromeria.jpg'
+    },
+    {
+        nameProduct: 'Зелень',
+        imgProduct: './img/green.jpg'
+    },
+    {
+        nameProduct: 'Экзотика',
+        imgProduct: './img/wholesale.jpg'
+    },
+    {
+        nameProduct: 'Сухоцветы, декор и флористический материал',
+        imgProduct: './img/decor.jpg'
+    }
+]
+
+class Card {
+    constructor(item) {
+        this._name = item.nameProduct;
+        this._img = item.imgProduct;
+    }
+
+    _getElement() {
+        const cardElement = document
+        .querySelector('#template')
+        .content
+        .querySelector('.product__card')
+        .cloneNode(true);
+        return cardElement;
+    }
+
+    _setAddListener() {
+        this._element.querySelector('.order-button').addEventListener('click', event => {
+            this._openForm();
+        });  
+    }
+
+    _openForm() {
+        document.querySelector('.form').classList.add('form_active')
+    }
+
+    generate() {
+        this._element = this._getElement();
+        this._setAddListener();
+        this._element.querySelector('.product__img').src = this._img;
+        this._element.querySelector('.product__name').textContent = this._name;
+        return this._element;
+    }
+}
+
+const enableValidation = {
+    inactiveButtonClass: 'form__button_error',
+    submitButtonSelector: '.form__button',
+    inputSelector: '.form__input',
+    inputErrorClass: 'form__input_error',
+    inputMarkError: 'form__input-mark_color_red',
+    inputMarkFine: 'form__input-mark_color_green',
+    errorClass: 'form__error_active'
+};
+
+class FormValidator {
+    constructor (enableValidation, templateForm) {
+        this._validateOptions = enableValidation;
+        this._form = templateForm;
+    }
+
+    _setEventListeners(profileForm) {
+        const inputList = profileForm.querySelectorAll(this._validateOptions.inputSelector);
+        
+        this._handleFormInput(profileForm, this._validateOptions);
+        profileForm.addEventListener('input', evt => {
+                this._handleFormInput(profileForm, this._validateOptions);
+        })
+        
+        inputList.forEach((inputElement) => {
+            inputElement.addEventListener('input', event => {
+               this._isvalid(profileForm, inputElement, inputElement.validationMessage);
+            })
+        })
+    }
+
+    _isvalid(profileForm, inputElement) {
+        const errorInput = profileForm.querySelector(`.form__error_${inputElement.id}`);
+        const errorMark = profileForm.querySelector(`.form__input-mark_${inputElement.id}`);
+        if (!inputElement.validity.valid || inputElement.value.length < inputElement.getAttribute("minlength")) {
+            this._showInputError(errorInput, inputElement, errorMark, inputElement.validationMessage);
+        } else {
+            this._hideInputError(inputElement, errorMark, errorInput);
+        }
+    }
+
+    _showInputError(errorInput, inputElement, errorMark, errorMessage) {
+        errorInput.classList.add(this._validateOptions.errorClass);
+        errorInput.textContent = errorMessage;
+        errorMark.classList.add(this._validateOptions.inputMarkError);
+        errorMark.classList.remove(this._validateOptions.inputMarkFine);
+        inputElement.classList.add(this._validateOptions.inputErrorClass);
+    }
+
+    _hideInputError(inputElement, errorMark, errorInput) {
+        if (inputElement.getAttribute('name') !== 'text') {
+            errorInput.classList.remove(this._validateOptions.errorClass);
+            errorMark.classList.remove(this._validateOptions.inputMarkError);
+            errorMark.classList.add(this._validateOptions.inputMarkFine);
+            inputElement.classList.remove(this._validateOptions.inputErrorClass);
+        }
+    }
+
+    _handleFormInput(profileForm, validateOptions) {
+        const hasErrors = !profileForm.checkValidity();
+        const buttonForm = profileForm.querySelector(validateOptions.submitButtonSelector);
+        buttonForm.disabled = hasErrors;
+        buttonForm.classList.toggle(validateOptions.inactiveButtonClass, hasErrors);
+    }
+
+    enableValidation() {
+        const profileForm = document.querySelector('.form__container');
+        profileForm.addEventListener("submit", (evt) => {
+            evt.preventDefault();
+        });
+        this._setEventListeners(profileForm);
+    }
+}
 
 productList.forEach((item) => {
 	const newCard = new Card(item)
@@ -34,6 +177,7 @@ $(document).ready(function() {
 		],
 	})
 })
+
 //form.js
 const form = document.querySelector('.form');
 const templateForm = form.querySelector('.form__container');

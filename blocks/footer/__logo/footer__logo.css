@@ -1,5 +1,5 @@
 .footer__logo {
-    background: no-repeat center url(/img/footer-logo.svg);
+    background: no-repeat center url(../../../img/footer-logo.svg);
     height: 100%;
     display: block;
     background-size: contain;
